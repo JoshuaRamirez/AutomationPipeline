@@ -2,7 +2,7 @@
 
 namespace AutomationPipeline.Example
 {
-    public class PipeA : Pipe<Filter1, Filter2>
+    internal class PipeC2 : Pipe<Filter2B, Filter3>
     {
         public override void Flow()
         {
@@ -10,7 +10,7 @@ namespace AutomationPipeline.Example
             {
                 throw new InvalidOperationException();
             }
-            var message = $"Flowing {SourceFilter.Id} through Pipe A to {TargetFilter.Id}";
+            var message = $"Flowing {SourceFilter.Id} through Pipe C2 to {TargetFilter.Id}";
             Console.WriteLine(message);
             Continue();
         }

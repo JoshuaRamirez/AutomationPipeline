@@ -2,12 +2,11 @@
 
 namespace AutomationPipeline.Example
 {
-    public class Filter2 : Filter
+    public class Filter2 : OneToManyFilter
     {
-        public string Message { get; set; } = "Running Filter 2";
         public override void Run()
         {
-            Console.WriteLine(Message);
+            Console.WriteLine("Running Filter 2");
             Continue();
         }
     }

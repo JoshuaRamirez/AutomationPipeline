@@ -2,11 +2,11 @@
 
 namespace AutomationPipeline.Example
 {
-    public class Filter1 : OneToOneFilter
+    internal class Filter3 : ManyToOneFilter
     {
         public override void Run()
         {
-            Console.WriteLine("Running Filter 1");
+            Console.WriteLine("Running Filter 3");
             Continue();
         }
     }
