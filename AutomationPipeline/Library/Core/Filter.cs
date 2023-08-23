@@ -2,6 +2,10 @@
 {
     public abstract class Filter
     {
+        public Filter()
+        {
+            this.Id = Guid.NewGuid();
+        }
         public Guid Id { get; set; }
         public abstract void Run();
         internal abstract void ConnectOutboundPipe(IPipe? pipe);

@@ -6,7 +6,7 @@ namespace AutomationPipeline.Example
     {
         public override void Run()
         {
-            Console.WriteLine("Running Filter 2A");
+            Console.WriteLine($"Running Filter 2A: {this.Id}");
             Continue();
         }
     }
